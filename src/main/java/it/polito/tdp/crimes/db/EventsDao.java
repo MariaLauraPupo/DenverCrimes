@@ -16,7 +16,7 @@ public class EventsDao {
 	
 	public List<String> getCategorie(){
 		String sql = "SELECT DISTINCT offense_category_id "
-				+"FROM evnts";
+				+"FROM events";
 		List<String> result = new LinkedList<>();
 		try {
 			Connection conn = DBConnect.getConnection() ;
